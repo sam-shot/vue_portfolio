@@ -26,7 +26,7 @@ defineProps({
                 <div class="">  
                     <span class="text-xs font-light opacity-70">Status</span>
                     <h2 class="font-light flex flex-row gap-1 justify-center text-sm">
-                        <span :class="{'bg-green-500': data.status === 1 }" class="bg-orange-500 w-2 h-2 rounded-xl inline-block m-auto "></span> <span>{{data.status === 0 ?  "Ongoing": "Completed"}} project</span>
+                        <span :class="{'bg-green-500': data.status === 1,'bg-orange-500': data.status === 0,}" class=" w-2 h-2 rounded-xl inline-block m-auto "></span> <span>{{data.status === 0 ?  "Ongoing": "Completed"}} project</span>
                     </h2>
                 </div>
             </div>
