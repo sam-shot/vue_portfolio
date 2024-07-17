@@ -33,14 +33,22 @@ body {
   background-color: var(--color-bg-dark);
   color: var(--color-white);
   font-family: "Poppins", sans-serif;
+  cursor: url("../images/default.png"), auto;
 }
 body::-webkit-scrollbar {
   display: none;
 }
 
+button:hover {
+  cursor: url('../images/handpointing.png'), pointer;
+}
+
 a {
   color: var(--color-white);
+  cursor: url('../images/handpointing.png'), pointer;
 }
+
+
 
 h1 {
   font-size: 3.5rem;

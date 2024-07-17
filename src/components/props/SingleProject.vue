@@ -9,7 +9,18 @@ defineProps({
         type: Boolean,
         required: true
     },
-})
+});
+
+</script>
+
+<script>
+export default {
+    methods: {
+        openLink() {
+            window.open(this.data.link, '_blank');
+        }
+    }
+}
 </script>
 
 <template>
@@ -34,7 +45,7 @@ defineProps({
                 <a :href="data.github" target="_blank"><i class="text-3xl uil uil-github"></i></a>
                 <span
                     class="md:inline hidden mx-4 m-auto font-normal opacity-80 underline text-sm">{{data.link}}</span>
-                <button on-click="" class="btn-project font-light my-auto">Preview</button>
+                <button @click="openLink" class="btn-project font-light my-auto">Preview</button>
 
             </div>
         </div>
