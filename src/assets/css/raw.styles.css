@@ -10,7 +10,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+textarea {
+  resize: none;
+  
+}
 :root {
   --color-white: #fff;
   --color-red: #841815;
@@ -24,7 +27,7 @@
   --color-bg3: #170A18;
 
   --transition: all 300ms ease;
-  --service-transition: all 500ms ease;
+  --service-transition: all 200ms ease;
 
   --border: 1px solid var(--color-white);
 }
@@ -153,7 +156,7 @@ header {
   background: var(--color-yellow);
   padding: 0.2rem 2rem;
   width: 4rem;
-  margin: 1.5rem 0 6rem;
+  margin: 1.5rem 0 4.5rem;
 }
 
 .header__social-links {
@@ -326,7 +329,7 @@ header {
 
 /* ######## MOBILE ########### */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
@@ -373,7 +376,7 @@ header {
   }
 
   .header__underline {
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
   }
 
   .header__right {
