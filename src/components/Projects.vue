@@ -4,6 +4,16 @@ import { ref } from 'vue';
 import SingleProject from './props/SingleProject.vue';
 const projects = ref([
     {
+        title: "CGPA Calculator",
+        status: 0,
+        github: "https://github.com/sam-shot",
+        link: "https://vue-vacation-app.vercel.app/",
+        stacks: "Vue.js, Javascript, Tailwind CSS, HTML",
+        type: "Web App",
+        description: "This is a website to discover places and plan your perfect vacation. Explore destinations, manage itineraries, and get personalized recommendations. Built with Vue.js for a seamless user experience.",
+        image: "https://i.imghippo.com/files/HqJyh1721185931.png",
+    },
+    {
         title: "Vacation App",
         status: 0,
         github: "https://github.com/sam-shot",
@@ -24,7 +34,7 @@ const projects = ref([
         image: "https://i.imghippo.com/files/4gY9f1721185958.png",
     },
     {
-        title: "CopyNSync Waitlist",
+        title: "CopyNSync",
         status: 1,
         github: "https://github.com/sam-shot",
         link: "https://copynsync.samddev.me/",

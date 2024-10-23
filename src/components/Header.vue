@@ -1,6 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import Button from "./props/Button.vue";
+
+
+const bookCall = () => {
+  window.open("https://calendly.com/d/cmhb-59w-pb7/samuel", "_blank");
+};
+const downloadCv = () => {
+  window.open("https://drive.google.com/file/d/1-26ema5qGdTa2siPp71tWxAefwFFzPPw/view", "_blank");
+};
 </script>
 
 <template>
@@ -12,19 +20,13 @@ import Button from "./props/Button.vue";
         <div class="header__underline"></div>
         <ul class="header__social-links">
           <li>
-            <a href="https://twitter.com/samshot_01" target="_blank"
-              ><i class="uil uil-twitter"></i
-            ></a>
+            <a href="https://twitter.com/samshot_01" target="_blank"><i class="uil uil-twitter"></i></a>
           </li>
           <li>
-            <a href="https://github.com/sam-shot" target="_blank"
-              ><i class="uil uil-github"></i
-            ></a>
+            <a href="https://github.com/sam-shot" target="_blank"><i class="uil uil-github"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/samshot01/" target="_blank"
-              ><i class="uil uil-linkedin"></i
-            ></a>
+            <a href="https://www.linkedin.com/in/samshot01/" target="_blank"><i class="uil uil-linkedin"></i></a>
           </li>
         </ul>
       </div>
@@ -37,36 +39,27 @@ import Button from "./props/Button.vue";
         <span class="text-sm opacity-100">
           <br />With my extensive experience in building custom solutions, I
           strive to provide innovative and user-friendly applications that meet
-          the needs of my clients.</span
-        >
+          the needs of my clients.</span>
         <span class="text-sm opacity-50">
           <br />
           I am dedicated to bringing your ideas to life and helping you achieve
-          your goals.</span
-        >
+          your goals.</span>
         <div class="mt-10 sm:mt-2 flex flex-row justify-between">
-          <Button class="" text="Hire me" button_type="primary" />
-          <Button text="Download CV" button_type="outlined" />
+          <Button @click="bookCall" class="" text="Book a Call" button_type="primary" />
+          <Button @click="downloadCv" text="Download CV" button_type="outlined" />
         </div>
       </div>
     </div>
   </header>
   <div class="container achievements__container">
     <div class="achievement">
-      <h2>24</h2>
+      <h2>15+</h2>
       <p>Projects</p>
     </div>
     <div class="achievement">
-      <h2>4</h2>
-      <p>Client</p>
+      <h2>10+</h2>
+      <p>Clients</p>
     </div>
-    <div class="achievement">
-      <h2>24</h2>
-      <p>Projects</p>
-    </div>
-    <div class="achievement">
-      <h2>24</h2>
-      <p>Projects</p>
-    </div>
+
   </div>
 </template>
